@@ -1,4 +1,8 @@
+using BestStories.Bal;
+using BestStories.Bal.Interfaces;
+
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddScoped<IBestStoriesService, BestStoriesService>();
 
 // Add services to the container.
 
